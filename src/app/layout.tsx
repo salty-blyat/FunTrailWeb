@@ -1,0 +1,28 @@
+import type { Metadata } from "next";
+import { Inter } from "next/font/google";
+import "./globals.css";
+import Navbar from "@/app/components/Navbar";
+import Slidebar from "@/app/components/slidebar/Slidebar";
+
+const inter = Inter({ subsets: ["latin"] });
+
+export const metadata: Metadata = {
+title: "Fun Trail",
+description: "Created by st23",
+};
+
+export default function RootLayout({
+children,
+}: Readonly<{ children: React.ReactNode; }>) {
+    return (
+    <html lang="en">
+
+    <body className={inter.className}>
+        <Navbar />
+        <Slidebar />
+        {children}
+    </body>
+
+    </html>
+    );
+    }
