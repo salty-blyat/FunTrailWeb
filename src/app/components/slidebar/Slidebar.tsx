@@ -28,7 +28,7 @@ function Slidebar() {
 
   return (
     <div className="relative overflow-hidden">
-      <div className="relative h-[300px] w-full">
+      <div className="relative h-[1000px] w-full">
         <img
           src={slides[currentSlide].imgSrc}
           alt={`Slide ${currentSlide + 1}`}
