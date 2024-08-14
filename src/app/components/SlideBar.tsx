@@ -1,7 +1,6 @@
 'use client';
 import React, { useState } from 'react';
-
-function Slidebar() {
+function SlideBar() {
   const [currentSlide, setCurrentSlide] = useState(0);
   const slides = [
     {
@@ -28,7 +27,7 @@ function Slidebar() {
 
   return (
     <div className="relative overflow-hidden">
-      <div className="relative h-[300px] w-full">
+      <div className="relative h-[600px] w-full">
         <img
           src={slides[currentSlide].imgSrc}
           alt={`Slide ${currentSlide + 1}`}
@@ -54,4 +53,4 @@ function Slidebar() {
   );
 }
 
-export default Slidebar;
+export default SlideBar;
