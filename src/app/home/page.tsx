@@ -11,6 +11,7 @@ const Home = () => {
       <SlideBar />
       <BottomSlide />
       <ProductCard />
+      <Navbar />
     </>
   )
 }
