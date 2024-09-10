@@ -12,11 +12,8 @@ function SlideBar() {
     <div className="relative w-full h-[600px] lg:h-[600px]">
       {/* Background Image */}
       <img
-        src={slide.imgSrc}
-        alt="Slide"
-        className="absolute inset-0 w-full h-full object-cover"
-      />
-      
+        src={slide.imgSrc} alt="Slide"
+        className="absolute inset-0 w-full h-full object-cover"/>
       {/* Overlay */}
       <div className="absolute inset-0 bg-black/30 flex flex-col justify-center px-8 lg:px-20">
         {/* Title */}
@@ -30,7 +27,7 @@ function SlideBar() {
         </p>
         
         {/* Button */}
-        <button className="mt-6 w-40 py-3 bg-black text-white text-lg font-semibold flex items-center justify-center hover:bg-gray-800">
+        <button className="mt-6 w-40 py-3 bg-black text-white text-lg font-semibold flex items-center justify-center hover:bg-teal-800">
           Explore <span className="ml-2">&#10142;</span>
         </button>
       </div>

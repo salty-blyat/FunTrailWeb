@@ -1,5 +1,4 @@
 'use client';
-import React from 'react';
 import Image1 from '@/app/assets/cabin.jpg';
 import Image2 from '@/app/assets/resort.jpg';
 import Image3 from '@/app/assets/spa.jpg';
@@ -15,7 +14,6 @@ function SlideBar() {
 
   function ProductCard() {
     const imagesPerPage = 4;
-
     const slides = [
       { src: Image1.src, label: 'Cabin', link: '#' },
       { src: Image2.src, label: 'Resort', link: '#' },
