@@ -1,103 +1,41 @@
-"use client";
-import { useState } from "react";
-import { FaApple } from "react-icons/fa";
-import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
-import Link from "next/link";
+import Link from "next/link" 
 
-const Navbar = () => {
-  const [isOpen, setIsOpen] = useState(false);
-  const toggleMenu = () => {
-    setIsOpen(!isOpen);
-  };
 
+export default function Navbar() {
   return (
-    <nav className="bg-teal-800 p-4">
-      <div className="container mx-auto flex justify-between items-center">
-        {/* Logo */}
-        <div className="flex items-center">
-          <div className="bg-gray-200 p-2 rounded-lg">
-            <FaApple className="text-2xl text-gray-600" />
-          </div>
-          <span className="ml-2 text-lg font-semibold text-white">Logo</span>
-        </div>
-
-        {/* Links */}
-        <div className="hidden lg:flex space-x-8 text-white">
-          <Link href="/" className="hover:text-gray-300">
-            Home
-          </Link>
-          <Link href="/" className="hover:text-gray-300">
-            Discover
-          </Link>
-          <Link href="/" className="hover:text-gray-300">
-            Hotel
-          </Link>
-          <Link href="/" className="hover:text-gray-300">
-            Restaurant
-          </Link>
-          <Link href="/" className="hover:text-gray-300">
-            About Us
-          </Link>
-        </div>
-
-        {/* Buttons */}
-        <div className="hidden lg:flex space-x-4 mb-3 mt-3">
-          <Link href="/signin" className="text-white hover:text-gray-300 mt-2 mr-4">
-            Signin
-          </Link>
-          <Link
-            href="/signup"
-            className="bg-black text-white px-4 py-2 rounded-md hover:bg-gray-800">
-            Sign Up
-          </Link>
-        </div>
-
-        {/* Mobile Menu Button */}
-        <div className="lg:hidden">
-          <button onClick={toggleMenu}>
-            {isOpen ? (
-              <AiOutlineClose className="text-2xl text-white" />
-            ) : (
-              <AiOutlineMenu className="text-2xl text-white" />
-            )}
-          </button>
-        </div>
-      </div>
-
-      {/* Mobile Menu */}
-      <div
-        className={`lg:hidden ${isOpen ? "block" : "hidden"} bg-teal-800 text-white shadow-lg`}
-      >
-        <Link href="/" className="block py-2 px-4 text-sm hover:bg-teal-700">
-          Home
-        </Link>
-        <Link href="/" className="block py-2 px-4 text-sm hover:bg-teal-700">
+    <header className="flex h-16 w-full items-center justify-between bg-background px-4 md:px-6">
+      <Link href="#" className="flex items-center gap-2" prefetch={false}>
+        {/* <MountainIcon className="h-6 w-6" /> */}
+        <span className="text-lg font-semibold">Acme Inc</span>
+      </Link>
+      <nav className="hidden items-center gap-6 md:flex">
+        <Link href="#" className="text-sm font-medium transition-colors hover:text-primary" prefetch={false}>
           Discover
         </Link>
-        <Link href="/" className="block py-2 px-4 text-sm hover:bg-teal-700">
-          Hotel
+        <Link href="#" className="text-sm font-medium transition-colors hover:text-primary" prefetch={false}>
+          About
         </Link>
-        <Link href="/" className="block py-2 px-4 text-sm hover:bg-teal-700">
-          Restaurant
+        <Link href="#" className="text-sm font-medium transition-colors hover:text-primary" prefetch={false}>
+          Services
         </Link>
-        <Link href="/" className="block py-2 px-4 text-sm hover:bg-teal-700">
-          About Us
-        </Link>
+      </nav>
+      <div className="flex items-center gap-4">
         <Link
-          href="/login"
-          className="block py-2 px-4 text-sm hover:bg-teal-700"
+          href="#"
+          className="hidden rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring md:inline-flex"
+          prefetch={false}
         >
-          Login
+          Sign In
         </Link>
         <Link
-          href="/signup"
-          className="block py-2 px-4 text-sm bg-black text-white hover:bg-gray-800"
+          href="#"
+          className="rounded-md bg-accent px-4 py-2 text-sm font-medium text-accent-foreground transition-colors hover:bg-accent/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
+          prefetch={false}
         >
           Sign Up
         </Link>
       </div>
-    </nav>
-  );
-};
+    </header>
+  )
+} 
 
-export default Navbar;
