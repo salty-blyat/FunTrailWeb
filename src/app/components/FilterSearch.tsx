@@ -98,7 +98,7 @@ export function FilterSearch() {
                 <h3 className="font-semibold tracking-tight">Listing Name</h3>
                 <small className="text-sm leading-none">Type</small>
                 <div className="flex items-center gap-2">
-                  <PlayCircleOutlined className="w-4 h-4 fill-primary"/> 
+                  <PlayCircleOutlined className="w-4 h-4 fill-primary" />
                   <span className="font-semibold">4.8</span>
                   <span className="text-sm text-muted-foreground">
                     (120 reviews)
@@ -109,7 +109,7 @@ export function FilterSearch() {
               </div>
             </div>
           </div>
-        </div> 
+        </div>
 
 
 

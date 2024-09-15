@@ -1,4 +1,7 @@
 'use client';
+
+import Link from "next/link";
+
  
 const Footer: React.FC = () => {
   return (
@@ -22,9 +25,9 @@ const Footer: React.FC = () => {
             <a href="/services" className="hover:text-gray-300">
               Services
             </a>
-            <a href="/contact" className="hover:text-gray-300">
+            <Link href="/contact" className="hover:text-gray-300">
               Contact
-            </a>
+            </Link>
           </div>
 
           {/* Social Media Icons */}

@@ -2,7 +2,7 @@
 
 function Signin() {
     return (
-        <div className="min-h-screen flex flex-col md:flex-row items-center justify-center">
+        <div className="min-h-screen flex  md:flex-row items-center justify-center">
             {/* Left Side - Sign In Form */}
             <div className="flex flex-col justify-center w-full md:w-1/2 p-8 bg-white md:min-h-screen">
                 <h2 className="text-3xl font-bold mb-8 text-center md:text-left">Sign In</h2>
@@ -80,18 +80,15 @@ function Signin() {
                     </button>
                 </div>
             </div>
-
             {/* Right Side - Promotional Banner */}
-            <div className="hidden md:flex w-full md:w-1/2 h-full relative bg-cover bg-center rounded-lg" style={{ backgroundImage: "url('/image_login/ang.jpg')" }}>
+            <div className="hidden md:flex w-full mr-5 md:w-1/2 h-[550px] relative bg-cover bg-center rounded-lg" style={{ backgroundImage: "url('/image_login/ang.jpg')" }}>
                 <div className="absolute inset-0 bg-black opacity-30 rounded-lg"></div>
                 <div className="relative z-10 text-white p-8 md:p-16">
-                    <h3 className="text-2xl md:text-4xl font-bold mb-4">FUN Trails</h3>
-                    <p className="text-lg md:text-xl">
-                        Filled with many vibrant areas and places to stay, Cambodia is an
-                        incredibly diverse country for its landmass.
-                    </p>
+                    <h3 className="text-2xl md:text-4xl font-bold mb-4">FUN 
+                        Trails</h3>
+                    
                     <div className="absolute bottom-4 left-4">
-                        <img src="/path/to/your/illustration.png" alt="Illustration" className="w-32 h-32" />
+                        {/* <img src="/path/to/your/illustration.png" alt="Illustration" className="w-32 h-32" /> */}
                     </div>
                 </div>
             </div>
