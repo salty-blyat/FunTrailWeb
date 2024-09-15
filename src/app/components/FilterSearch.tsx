@@ -8,6 +8,7 @@ export function FilterSearch() {
     <div className="mx-auto container flex justify-center gap-10">
       <div className="flex flex-col min-w-60 gap-4 items-start py-2">
         <div className="text-lg font-semibold">Filter</div>
+        <div className="text-lg font-semibold">Filter</div>
         <div className="mb-4 w-full max-w-xs">
           <input
             type="text"
@@ -104,12 +105,12 @@ export function FilterSearch() {
                     (120 reviews)
                   </span>
                 </div>
-
                 <div className="font-semibold">$50 - $100</div>
               </div>
             </div>
           </div>
         </div>
+<<<<<<< HEAD
 
 
 
@@ -117,6 +118,8 @@ export function FilterSearch() {
 
 
 
+=======
+>>>>>>> 5dfc6a50e3d14ae460f8f952a2552651224cd049
       </div>
     </div>
   );
