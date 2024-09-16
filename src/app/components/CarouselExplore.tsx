@@ -1,7 +1,7 @@
 'use client';
 import { useRef } from 'react';
 import './styles/CarouselExplore.css'
-import { CaretLeftOutlined, CaretRightOutlined } from '@ant-design/icons';
+import { LeftOutlined, RightOutlined} from '@ant-design/icons';
 import Image from 'next/image';
 
 const CarouselExplore = () => {
@@ -30,7 +30,7 @@ const scrollRef = useRef<HTMLDivElement>(null);
 
   return ( 
     <div>
-      <h2 className="text-3xl font-bold text-gray-900">CarouselExplore Cambodia</h2>
+      <h2 className="text-2xl font-bold text-gray-900">Explore Cambodia</h2>
       <p className="text-lg text-gray-600 mt-2">
         These popular destinations have a lot to offer
       </p>
@@ -54,14 +54,17 @@ const scrollRef = useRef<HTMLDivElement>(null);
         </div>
 
         {/* Left Arrow */}
-        <button onClick={scrollLeft}
-          className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-white p-2 rounded-full shadow-lg">
-          <CaretLeftOutlined className="h-6 w-6 text-gray-800" />
+        <button
+          onClick={scrollLeft}
+          className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-white p-2 rounded-full shadow-lg flex items-center justify-center">
+          <LeftOutlined className="text-gray-800" />
         </button>
+
         {/* Right Arrow */}
-        <button onClick={scrollRight}
-          className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-white p-2 rounded-full shadow-lg">
-          <CaretRightOutlined className="h-6 w-6 text-gray-800" />
+        <button
+          onClick={scrollRight}
+          className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-white p-2 rounded-full shadow-lg flex items-center justify-center">
+          <RightOutlined className="text-gray-800" />
         </button>
       </div>
     </div> 

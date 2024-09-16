@@ -3,13 +3,14 @@ const Signup = () => {
     return (
         <div className="min-h-screen flex flex-col md:flex-row items-center justify-center">
             {/* Left Side - Promotional Banner */}
-            <div className="hidden md:flex w-full md:w-1/2 h-full relative bg-cover bg-center rounded-lg" style={{ backgroundImage: "url('/image_login/s.webp')" }}>
+            <div className="hidden md:flex  w-full md:w-1/2 h-[550px] ml-5 relative bg-cover bg-center rounded-lg" style={{ backgroundImage: "url('/image_login/s.webp')" }}>
                 <div className="absolute inset-0 bg-black opacity-30 rounded-lg"></div>
                 <div className="relative z-10 text-white p-8 md:p-16">
                     <h3 className="text-2xl font-bold mb-4">FUN Trails</h3>
-                    <div className="absolute bottom-3 left-4">
+                    
+                    {/* <div className="absolute bottom-3 left-4">
                         <img src="path/to/illustration.png" alt="Illustration" className="w-40 h-40" />
-                    </div>
+                    </div> */}
                 </div>
             </div>
 
@@ -124,7 +125,7 @@ const Signup = () => {
                 </div>
                 <div className="flex space-x-4 justify-center">
                     <button className="flex items-center justify-center w-10 h-10 bg-red-500 text-white rounded-full hover:bg-red-600">
-                       
+                       G
                     </button>
                     <button className="flex items-center justify-center w-10 h-10 bg-blue-500 text-white rounded-full hover:bg-blue-600">
                         f

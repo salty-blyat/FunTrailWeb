@@ -5,6 +5,8 @@ import Hero from "../components/Hero";
 import Navbar from "../components/Navbar";
 import GridCard from "../components/GridCard";
 import ImagePanel from "../components/ImagePanel";
+import TrendingDestination from "../components/TrendingDestination";
+import BentoBoxGrid from "../components/BentoBoxGrid";
 
 const Home = () => {
   return (
@@ -15,8 +17,10 @@ const Home = () => {
         <div className="container px-4 mx-auto space-y-6  "> 
           <SearchGroup /> {/* make this responsive */}
           <GridCard /> {/* make this responsive */}
+          <BentoBoxGrid/>
           <ImagePanel />
           <CarouselExplore />
+          <TrendingDestination/>
         </div>
       </main>
       <Footer />
