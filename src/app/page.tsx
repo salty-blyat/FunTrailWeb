@@ -1,7 +1,5 @@
-import React from 'react'
-import Home from './home/page';
-import Navbar from './components/Navbar';
 
+import Home from './home/page';
 const App = () => {
   return ( 
     <Home/> 

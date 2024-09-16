@@ -82,7 +82,7 @@ function Signin() {
             </div>
 
             {/* Right Side - Promotional Banner */}
-            <div className="hidden md:flex w-full md:w-1/2 h-full relative bg-cover bg-center rounded-lg" style={{ backgroundImage: "url('/path/to/your/image.png')" }}>
+            <div className="hidden md:flex w-full md:w-1/2 h-full relative bg-cover bg-center rounded-lg" style={{ backgroundImage: "url('/image_login/ang.jpg')" }}>
                 <div className="absolute inset-0 bg-black opacity-30 rounded-lg"></div>
                 <div className="relative z-10 text-white p-8 md:p-16">
                     <h3 className="text-2xl md:text-4xl font-bold mb-4">FUN Trails</h3>
