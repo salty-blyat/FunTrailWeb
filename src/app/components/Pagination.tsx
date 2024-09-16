@@ -2,7 +2,7 @@ import { Pagination, PaginationContent, PaginationItem, PaginationPrevious, Pagi
 
 export default function Component() {
   return (
-    <div className="flex items-center justify-center py-4">
+    <div className="flex justify-center py-4">
       <Pagination>
         <PaginationContent>
           <PaginationItem>
