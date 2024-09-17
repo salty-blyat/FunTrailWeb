@@ -1,11 +1,11 @@
 import React from 'react';
-import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from './Accordion';
+import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from './ui/Accordion';
 import { Checkbox } from 'antd';
 
 const FilterSection = () => {
     return (
-        <div className="flex flex-col min-w-30 gap-4 items-start py-2">
-            <div className="text-lg font-semibold">Filter</div>
+        <div className="flex flex-col gap-4 items-start py-2">
+            <h1 className="text-lg font-semibold">Filter</h1>
             <div className="mb-4 w-full max-w-xs">
                 <input
                     type="text"
@@ -67,21 +67,15 @@ const FilterSection = () => {
                 </AccordionItem>
 
                 {/* Filter by Amenities */}
-                <AccordionItem value="amenities">
-                    <AccordionTrigger className="text-base">Amenities</AccordionTrigger>
+                <AccordionItem value="popular">
+                    <AccordionTrigger className="text-base">Popular</AccordionTrigger>
                     <AccordionContent>
                         <div className="grid gap-2">
                             <div className="flex items-center gap-2">
-                                <Checkbox id="amenity-wifi">Wifi</Checkbox>
+                                <Checkbox id="amenity-wifi">Popular Hotel</Checkbox>
                             </div>
                             <div className="flex items-center gap-2">
-                                <Checkbox id="amenity-parking">Parking</Checkbox>
-                            </div>
-                            <div className="flex items-center gap-2">
-                                <Checkbox id="amenity-pool">Pool</Checkbox>
-                            </div>
-                            <div className="flex items-center gap-2">
-                                <Checkbox id="amenity-gym">Gym</Checkbox>
+                                <Checkbox id="amenity-parking">Popular Restaurant</Checkbox>
                             </div>
                         </div>
                     </AccordionContent>
