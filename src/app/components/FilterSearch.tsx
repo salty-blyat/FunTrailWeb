@@ -1,7 +1,7 @@
+import { PlayCircleOutlined } from "@ant-design/icons";
 import { Checkbox } from "antd";
 import Link from "next/link";
-import { PlayCircleOutlined } from "@ant-design/icons";
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "./Accordion";
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "../ui/Accordion";
 
 export function FilterSearch() {
   return (

@@ -1,5 +1,7 @@
 import { ArrowRightOutlined } from "@ant-design/icons";
-import Image from "next/image";
+import { Button } from "antd";
+import Image from "next/image"; 
+
 
 const Hero = () => {
   const slide = {
@@ -10,7 +12,7 @@ const Hero = () => {
   };
 
   return (
-    <div className="relative w-full h-[600px] lg:h-[600px]">
+    <section className="relative w-full h-[600px] lg:h-[600px]">
       {/* Background Image */}
       <Image
         src={slide.imgSrc}
@@ -32,11 +34,13 @@ const Hero = () => {
         </p>
 
         {/* Button */}
-        <button className="mt-6 w-40 py-3 bg-black text-white text-lg font-semibold flex items-center justify-center hover:bg-teal-800">
-          Explore <ArrowRightOutlined className="ml-2" /> 
-        </button>
+        <div>
+          <Button className="p-6 text-lg" type="primary">
+            Explore <ArrowRightOutlined className="font-bold" />
+          </Button>
+        </div>
       </div>
-    </div>
+    </section>
   );
 };
 export default Hero;

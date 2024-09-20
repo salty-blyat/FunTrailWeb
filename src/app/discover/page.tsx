@@ -1,9 +1,8 @@
-import SearchGroup from "../components/SearchGroup";
-import CarouselExplore from "../components/CarouselExplore";
+import CarouselExplore from "../home/components/CarouselExplore";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
-import TrendingDestination from "../components/TrendingDestination";
 import PromoSection from "../components/PromoSection";
+import TrendingDestination from "../components/TrendingDestination";
 
 const Discover = () => {
   return (

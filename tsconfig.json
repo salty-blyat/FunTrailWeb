@@ -17,12 +17,19 @@
         "name": "next"
       }
     ],
+    "baseUrl": "./src", 
     "paths": {
-      "@/*": ["./src/*"],
-      "@components/*": ["./src/app/components/*"],
-      "@app/*": ["./src/app/*"],
-      "@public/*": ["./public/*"],
-      "@lib/*": ["./src/app/components/lib/*"]
+      "@/*": ["*"],
+      "@app/*": ["app/*"],  
+      "@hooks/*": ["app/hooks/*"],
+      "@hotel/*": ["app/hotel/*"],
+      "@search/*": ["app/search/*"],
+      "@register/*": ["app/register/*"],
+      "@home/*": ["app/home/*"],
+      "@login/*": ["app/login/*"],
+      "@components/*": ["app/components/*"],
+      "@lib/*": ["app/lib/*"],
+      "@public/*": ["../public/*"], 
     }
   },
   "include": [

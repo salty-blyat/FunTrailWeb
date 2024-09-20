@@ -1,6 +1,5 @@
-import React from 'react';
-import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from './Accordion';
 import { Checkbox } from 'antd';
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '../ui/Accordion';
 
 const FilterSection = () => {
     return (

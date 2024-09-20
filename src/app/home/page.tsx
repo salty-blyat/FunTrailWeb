@@ -1,32 +1,28 @@
-import SearchGroup from "../components/SearchGroup";
-import CarouselExplore from "../components/CarouselExplore";
-import Footer from "../components/Footer";
-import Hero from "../components/Hero";
+"use client";
 import Navbar from "../components/Navbar";
-import GridCard from "../components/GridCard";
-import ImagePanel from "../components/ImagePanel";
-import TrendingDestination from "../components/TrendingDestination";
-import BentoBoxGrid from "../components/BentoBoxGrid";
+import Hero from "@home/components/Hero";
+import SearchGroup from "@home/components/SearchGroup";
+import GridCard from "@home/components/GridCard";
+import ImagePanel from "@home/components/ImagePanel";
+import BentoBox from "@home/components/BentoBox";
 
 const Home = () => {
   return (
     <>
-      <Navbar /> {/* make navbar sticky on top */}
+      <Navbar />
       <main>
         <Hero />
-        <div className="container px-4 mx-auto space-y-6  "> 
-          <SearchGroup /> {/* make this responsive */}
-          <GridCard /> {/* make this responsive */}
-          <BentoBoxGrid/>
+        <div className="container relative px-4 mx-auto  ">
+          <SearchGroup className="absolute -top-10 left-10 right-10 " />
+          <BentoBox className="pt-36" /> 
+
           <ImagePanel />
-          <CarouselExplore />
-          <TrendingDestination/>
+          {/* <CarouselExplore /> */}
         </div>
       </main>
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 };
-
 
 export default Home;
