@@ -10,20 +10,23 @@ const theme: ThemeConfig = {
       colorPrimaryActive: primary,
       colorPrimaryBorder: primary,
       colorPrimaryText: primary,
-      colorPrimary: primary,  
+      colorPrimary: primary,
       colorPrimaryBorderHover: primary,
       colorPrimaryBgHover: primary,
       colorPrimaryHover: primary,
       colorPrimaryTextHover: primary,
-
-    }, 
+    },
+    Pagination: {
+      colorBgBlur: primary,
+      colorPrimaryActive: primary 
+    },
     Input: {
-      colorBgContainer: secondary, 
+      colorBgContainer: secondary,
       colorBorder: primary,
       hoverBorderColor: primary,
-      colorBgBlur: primary
-      
-    }
+      colorBgBlur: primary,
+      colorTextBase: primary,
+    },
   },
   token: {
     fontSize: 11,
